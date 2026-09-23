@@ -1,7 +1,8 @@
 # fullstackopen-part11-app
 
-Bloglist application with a CI/CD pipeline.
+Bloglist application with a CI/CD pipeline, built for exercise 11.21.
 
+The application is deployed at https://fullstackopen-part11-app.fly.dev/
 
 ## CI/CD pipeline
 
