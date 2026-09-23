@@ -5,7 +5,8 @@ import { Button, Card, CardContent, TextField } from '@mui/material'
 const Blog = ({ blog, onLike, onDelete, onComment, currentUser, singleView = false }) => {
   const [comment, setComment] = useState('')
 
-  const isOwner = currentUser?.id === blog.user?.id
+  const ownerId = blog.user?.id ?? blog.user
+  const isOwner = Boolean(currentUser?.id) && currentUser.id === ownerId
 
   if (!singleView) {
     return (
